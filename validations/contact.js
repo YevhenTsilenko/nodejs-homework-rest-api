@@ -6,11 +6,6 @@ const joiContactSchema = Joi.object({
   phone: Joi.string().required(),
 })
 
-const joiContactSchemaPatch = Joi.object({
-  favorite: Joi.boolean().required(),
-})
-
 module.exports = {
   joiContactSchema,
-  joiContactSchemaPatch
 }

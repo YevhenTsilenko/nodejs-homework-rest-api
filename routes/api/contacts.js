@@ -3,7 +3,7 @@ const express = require('express')
 const { contacts: ctrl } = require('../../controllers')
 
 const { validation, controllerWrapper } = require('../../middlewares')
-const { joiContactSchema, joiContactSchemaPatch } = require('../../validations')
+const { joiContactSchema } = require('../../validations')
 
 const router = express.Router()
 
@@ -17,6 +17,6 @@ router.delete('/:contactId', controllerWrapper(ctrl.removeById))
 
 router.put('/:contactId', validation(joiContactSchema), controllerWrapper(ctrl.updateById))
 
-router.patch('/:contacId/favorite', validation(joiContactSchemaPatch), controllerWrapper(ctrl.updateStatusContact))
+router.patch('/:contactId/favorite', controllerWrapper(ctrl.updateStatusContact))
 
 module.exports = router

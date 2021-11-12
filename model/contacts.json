@@ -60,11 +60,9 @@
     "favorite": false
   },
   {
-    "name": {
-      "name": "Yevhen",
-      "email": "jackbzz@gmail.com",
-      "phone": "(072) 123-45-67",
-      "favorite": true
-    }
+    "name": "Yevhen",
+    "email": "jackbzz@gmail.com",
+    "phone": "(072) 123-45-67",
+    "favorite": true
   }
 ]

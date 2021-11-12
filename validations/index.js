@@ -1,5 +1,6 @@
-const JoiContactSchema = require('./contact')
+const { joiContactSchema, joiContactSchemaPatch } = require('./contact')
 
 module.exports = {
-  JoiContactSchema
+  joiContactSchema,
+  joiContactSchemaPatch
 }
