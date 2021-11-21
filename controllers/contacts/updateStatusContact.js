@@ -1,5 +1,5 @@
 const { NotFound } = require('http-errors')
-const { Contact } = require('../../model')
+const { Contact } = require('../../models')
 
 const updateStatusContact = async (req, res) => {
   const { favorite } = req.body
